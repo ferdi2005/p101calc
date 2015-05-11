@@ -1,0 +1,73 @@
+<html>
+<head>
+	<title> Programma 101 Calculator </title>
+</head>
+<body>
+
+	<!-- Beginning -->
+    <table border="3" width="100" height="50"> <tr ><td width="75%"id="lamp1" bgcolor="green"> <td width="25%" id="lamp2" bgcolor="red"> </tr> </table> <br> 
+	<input type="text" id="txt"> <br>
+	<img src="keyboard.jpg" width="480" height="200" usemap="#keyboard" border="0"> 
+	<map name="keyboard">
+	<area shape="rect" coords="32,108,64,140" id="C" onclick="txt.value += 'C'">
+	<area shape="rect" coords="21,142,21,143" name="nnullatore"nohref>
+	<area shape="rect" coords="33,74,67,102" id="D" onclick="txt.value += 'D'">
+	<area shape="rect" coords="33,45,72,74" id="E" onclick="txt.value += 'E'">
+	<area shape="rect" coords="39,7,72,40" id="F" onclick="txt.value += 'F'">
+	<area shape="rect" coords="5,6,31,41" id="reset" onclick="txt.value = '0'">
+	<!--<area shape="rect" coords="70,41,118,71" onclick="txt.value += '1'">
+	<area shape="rect" coords="74,8,119,38" onclick="txt.value += '1'"> 
+	<area shape="rect" coords="73,73,116,107" id="split" onclick="txt.value += '1'"> -->
+	<area shape="rect" coords="71,109,115,142" id="B" onclick="txt.value += '1'">
+	<area shape="rect" coords="305,42,332,64" id="*" onclick="txt.value += '*'">
+	<area shape="rect" coords="306,75,336,98" id="/" onclick="txt.value += '/'">
+	<area shape="rect" coords="274,76,305,103" id="+" onclick="txt.value += '+'">
+	<area shape="rect" coords="277,42,305,69" id="-" onclick="txt.value += '-'">
+	<!--<area shape="rect" coords="273,9,334,39" id="Adown" onclick="txt.value += '1'">
+	<area shape="rect" coords="337,8,369,38" id="aud" onclick="txt.value += '1'">
+	<area shape="rect" coords="311,62,312,62" nohref> -->
+	<area shape="rect" coords="368,9,400,38" id="sqrt" onclick="txt.value = math.sqrt(txt)">
+	<area shape="rect" coords="337,38,366,67" id="A" onclick="txt.value += 'A'"> <!--
+	<area shape="rect" coords="367,39,399,69" id="print" onclick="txt.value += ''"> -->
+	<area shape="rect" coords="338,71,367,100" id="R" onclick="txt.value += 'R'"> 
+	<area shape="rect" coords="365,73,401,100" id="annull" onclick="txt.value += '0'"> <!--
+	<area shape="rect" coords="370,135,403,198" id="z" onclick="txt.value += '1'"> -->
+	<!-- <area shape="rect" coords="341,134,368,197" id="y" onclick="txt.value += '1'">
+	<area shape="rect" coords="310,136,341,199" id="w" onclick="txt.value += '1'">
+	<area shape="rect" coords="271,140,309,196" id="v" onclick="txt.value += '1'"> -->
+	<area shape="rect" coords="217,9,267,139" alt="=" onclick="txt.value = eval(txt.value); lamp()">
+	<area shape="rect" type="submit" coords="189,10,211,38" id="9" onclick="txt.value += '9'">
+	<area shape="rect" type="submit" coords="153,11,191,41" id="8" onclick="txt.value += '8'">
+	<area shape="rect" coords="123,9,149,39" id="7" onclick="txt.value += '7'">
+	<area shape="rect" coords="187,42,211,72" id="6" onclick="txt.value += '6'">
+	<area shape="rect" coords="157,40,184,70" id="5" onclick="txt.value += '5'">
+	<area shape="rect" coords="123,42,147,70" id="4" onclick="txt.value += '4'">
+	<area shape="rect" coords="185,72,213,104" id="3" onclick="txt.value += '3'">
+	<area shape="rect" coords="148,71,183,104" id="2" onclick="txt.value += '2'">
+	<area shape="rect" coords="122,74,148,104" id="1" onclick="txt.value += '1'">
+	<area shape="rect" coords="188,106,212,136" id="-" onclick="txt.value += '-'">
+	<area shape="rect" coords="153,108,175,134" id="." onclick="txt.value += '.'">
+	<area shape="rect" coords="118,105,150,138" id="0" onclick="txt.value += '0'">
+	</map>
+	<script>
+	  var txt =  document.getElementById('txt');
+	  function lamp() {
+		if (txt != Infinity) {document.getElementById("lamp1").style.backgroundColor="#9CFF00"}
+		else if (test == true) {
+			document.getElementById("lamp2").style.backgroundColor="#FF4D4D"
+		}
+		setTimeout("normale()", 1000)
+	}
+	function normale() {
+		document.getElementById("lamp1").style.backgroundColor="green"
+		document.getElementById("lamp2").style.backgroundColor="red"
+	}
+	</script>
+	<!-- End -->
+	</body>
+	</html>
+
+
+</body>
+</html>
+
